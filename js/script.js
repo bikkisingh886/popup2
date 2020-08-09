@@ -20,7 +20,16 @@
               })
     });
 
-
+spaApp.controller("myctrl",function($scope){
+           $scope.navlist = [
+               {name:'Home',link:'#!home'},
+               {name:'About',link:'#!about'},
+               {name:'Contact',link:'#!contact'},
+               {name:'RequestByTeacher',link:'#!requestbyteacher'},
+               {name:'RequestByStudent',link:'#!requestbystudent'},
+               {name:'Subjects',link:'#!subject'}
+           ];
+	});
 
 // create the controller and inject Angular's $scope
 spaApp.controller('mainController', function($scope,$http,$routeParams,$uibModal){
