@@ -20,6 +20,11 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m9 l10">
+			<nav class="navigation-menu primary--menu" ng-controller="myctrl">
+                                                    <ul class="nav">
+                                                        <li class="has-children" ng-repeat="x in navlist"><a class="nav-link" href="{{x.link}}">{{x.name}}</a></li>
+                                                    </ul>
+                                                </nav>
                     <a href="#!">Home</a> |
                     <a href="#!about">About</a> |
                     <a href="#!contact">Contact</a> |
