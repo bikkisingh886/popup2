@@ -36,7 +36,7 @@ spaApp.controller('mainController', function($scope,$http,$routeParams,$uibModal
 	         
 		$scope.showPopup = function(){	
 					
-		  user = {'first_name':'JON','last_name':'Smith','address':'Ny'};
+		  
 		  $scope.modalInstance = $uibModal.open({
 				 ariaLabelledBy: 'modal-title',
 				 ariaDescribedBy: 'modal-body',
@@ -59,9 +59,7 @@ spaApp.controller('mainController', function($scope,$http,$routeParams,$uibModal
 spaApp.controller("ModelHandlerController",function($scope,$uibModalInstance,$http){
   
 		
-		$scope.first_name = user.first_name;
-		$scope.last_name = user.last_name;
-		$scope.address  = user.address;
+		
 		
 		 $scope.cancelModal = function(){
 			 console.log("cancelmodal");
