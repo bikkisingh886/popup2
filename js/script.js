@@ -7,7 +7,7 @@
               $routeProvider
               // route for the home page
               .when('/', {
-                  templateUrl : 'home.html',
+                  templateUrl : 'angular/app/home.html',
                   controller  : 'mainController'
               })
 			  .when('/about', {
@@ -18,6 +18,7 @@
                   templateUrl : 'contact.html',
                   controller  : 'contactController'
               })
+
     });
 
 spaApp.controller("myctrl",function($scope){
@@ -59,10 +60,10 @@ spaApp.controller('mainController', function($scope,$http,$routeParams,$uibModal
 spaApp.controller("ModelHandlerController",function($scope,$uibModalInstance,$http){
   
 		
-		
 		$scope.first_name = user.first_name;
 		$scope.last_name = user.last_name;
 		$scope.address  = user.address;
+		
 		 $scope.cancelModal = function(){
 			 console.log("cancelmodal");
 			 $uibModalInstance.dismiss('close');
