@@ -36,7 +36,7 @@ spaApp.controller('mainController', function($scope,$http,$routeParams,$uibModal
 	         
 		$scope.showPopup = function(){	
 					
-		  
+		  user = {'first_name':'JON','last_name':'Smith','address':'Ny'};
 		  $scope.modalInstance = $uibModal.open({
 				 ariaLabelledBy: 'modal-title',
 				 ariaDescribedBy: 'modal-body',
