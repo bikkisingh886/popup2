@@ -60,7 +60,9 @@ spaApp.controller("ModelHandlerController",function($scope,$uibModalInstance,$ht
   
 		
 		
-		
+		$scope.first_name = user.first_name;
+		$scope.last_name = user.last_name;
+		$scope.address  = user.address;
 		 $scope.cancelModal = function(){
 			 console.log("cancelmodal");
 			 $uibModalInstance.dismiss('close');
